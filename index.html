@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handle authentication using local storage</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Signup</h1>
+	<div id="signup-form">
+		<label for="name">Name:</label><br>
+		<input type="text" id="name" required><br>
+
+		<label for="email">Email:</label><br>
+		<input type="email" id="email" required><br>
+
+		<label for="password">Password:</label><br>
+		<input type="password" id="password" required><br><br>
+
+		<button id="signup-btn">Signup</button><br>
+	</div>
+	<div id="signup-success" style="display: none; color: green;">
+		Signup successful! Redirecting to profile page...
+	</div>
+	<div id="signup-error" style="display: none; color: red;">
+		Error: Please fill in all fields.
+	</div>
+
+    <h1>Profile</h1>
+	<div id="user-details">
+		<label for="name">Name:</label>
+		<span id="name"></span><br>
+
+		<label for="email">Email:</label>
+		<span id="email"></span><br>
+
+		<button id="logout-btn">Logout</button>
+	</div>
+	<div id="profile-error" style="display: none; color: red;">
+		Error: You need to login first.
+	</div>
+    <script src="main.js"></script>
+</body>
+</html>
